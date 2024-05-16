@@ -1,0 +1,153 @@
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\bin\Debug\OQC_Check_App.exe
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\bin\Debug\OQC_Check_App.pdb
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\bin\Debug\UMC.OQC.dll
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\bin\Debug\UMC.PVS.dll
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\bin\Debug\UMC.DB.dll
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\bin\Debug\UMC.OQC.pdb
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\bin\Debug\UMC.PVS.pdb
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\bin\Debug\UMC.DB.pdb
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.csprojResolveAssemblyReference.cache
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.FormLogin.resources
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.FormMain.resources
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.Properties.Resources.resources
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.GenerateResource.cache
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CoreCompileInputs.cache
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CopyComplete
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.exe
+D:\Google Drive\Github.com\work\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.pdb
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\bin\Debug\OQC_Check_App.exe
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\bin\Debug\OQC_Check_App.pdb
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\bin\Debug\UMC.OQC.dll
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\bin\Debug\UMC.PVS.dll
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\bin\Debug\UMC.DB.dll
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\bin\Debug\UMC.OQC.pdb
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\bin\Debug\UMC.PVS.pdb
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\bin\Debug\UMC.DB.pdb
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.csprojAssemblyReference.cache
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.FormLogin.resources
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.FormMain.resources
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.Properties.Resources.resources
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.GenerateResource.cache
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CoreCompileInputs.cache
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CopyComplete
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.exe
+E:\DEV\Works UMC\NichiconSystem\OQC_Check_App\obj\Debug\OQC_Check_App.pdb
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.pdb
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.OQC.dll
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.PVS.dll
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.DB.dll
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.OQC.pdb
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.PVS.pdb
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.DB.pdb
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.FormLogin.resources
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.FormMain.resources
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.Properties.Resources.resources
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.GenerateResource.cache
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CoreCompileInputs.cache
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CopyComplete
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.exe
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.pdb
+E:\DEV\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csprojAssemblyReference.cache
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csprojAssemblyReference.cache
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.frmLockSystem.resources
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.FormLogin.resources
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.FormMain.resources
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.Properties.Resources.resources
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.GenerateResource.cache
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CoreCompileInputs.cache
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.exe
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.pdb
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe.config
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe.manifest
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.application
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.pdb
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.OQC.dll
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.PVS.dll
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.DB.dll
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\Club.Framework.Data.dll
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\Club.Util.dll
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\Club.Util.Extension.dll
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.OQC.pdb
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.PVS.pdb
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.PVS.dll.config
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.DB.pdb
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.exe.manifest
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.application
+E:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CopyComplete
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csprojAssemblyReference.cache
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.frmLockSystem.resources
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.FormLogin.resources
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.FormMain.resources
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.Properties.Resources.resources
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.GenerateResource.cache
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CoreCompileInputs.cache
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.exe
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.pdb
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe.config
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe.manifest
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.application
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.pdb
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.OQC.dll
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.PVS.dll
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.DB.dll
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\Club.Framework.Data.dll
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\Club.Util.dll
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\Club.Util.Extension.dll
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.OQC.pdb
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.PVS.pdb
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.PVS.dll.config
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\UMC.DB.pdb
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.exe.manifest
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.application
+D:\Bk\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CopyComplete
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe.config
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe.manifest
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.application
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.exe
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\bin\Debug\OQC_Check_App.pdb
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.frmLockSystem.resources
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.FormLogin.resources
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.FormMain.resources
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.Properties.Resources.resources
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.GenerateResource.cache
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CoreCompileInputs.cache
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.exe.manifest
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.application
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.exe
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.pdb
+D:\u16354 (cuongpv)\Works UMC\UMC Projects\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.AssemblyReference.cache
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.csprojAssemblyReference.cache
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.frmLockSystem.resources
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.FormLogin.resources
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.FormMain.resources
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.Properties.Resources.resources
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.GenerateResource.cache
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CoreCompileInputs.cache
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.exe.config
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.exe.manifest
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.application
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.exe
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.pdb
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.exe.manifest
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.application
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.exe
+D:\18.HOANHT\Phan-Mem-Cua-Cong-Ty\C#\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.pdb
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.exe.config
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.exe.manifest
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.application
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.exe
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\bin\Debug\OQC_Check_App.pdb
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.AssemblyReference.cache
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.frmLockSystem.resources
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.FormLogin.resources
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.FormMain.resources
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.Properties.Resources.resources
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.GenerateResource.cache
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.csproj.CoreCompileInputs.cache
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.exe.manifest
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.application
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.exe
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.pdb

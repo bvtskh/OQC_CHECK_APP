@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98D0AF7D-B94E-462F-8E6A-39496EF3D9F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OQC_Check_App</RootNamespace>
+    <AssemblyName>OQC_Check_App</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\172.28.10.12\Share\18 IT\U23702%28quyetpv%29\PROGRAM\0.ALL\OQC_CheckApp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\172.28.10.12\Share\18 IT\U23702%28quyetpv%29\PROGRAM\0.ALL\OQC_CheckApp\</InstallUrl>
+    <UpdateUrl>\\172.28.10.12\Share\18 IT\U23702%28quyetpv%29\PROGRAM\1.CANON\OQC\</UpdateUrl>
+    <ProductName>OQC Check System</ProductName>
+    <PublisherName>quyetpv%40umcvn.com</PublisherName>
+    <SuiteName>UMCVN</SuiteName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <WebPage>publish.htm</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>53</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1D7DB7B0A18A27513A89AEA80EF438350A7655C5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\ResultEntity.cs" />
+    <Compile Include="Business\SingletonHelper.cs" />
+    <Compile Include="Business\StringExtension.cs" />
+    <Compile Include="Business\UmesHelper.cs" />
+    <Compile Include="Business\UsapHelper.cs" />
+    <Compile Include="Business\Validator.cs" />
+    <Compile Include="Connected Services\ERPService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\PVSWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\USAPService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="EnumerableMethods.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="FormError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormError.Designer.cs">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetworkHelper.cs" />
+    <Compile Include="ObjectMethods.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ultils.cs" />
+    <Compile Include="UnexpectedException.cs" />
+    <EmbeddedResource Include="FormError.resx">
+      <DependentUpon>FormError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Connected Services\ERPService\ERPWebService.wsdl" />
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ArrayOfTbl_test_logEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.FeederEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.FGFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.FindFeederResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.FindRankContentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.FindTokusaiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.FixtureEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.FixtureFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.FixtureGetListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.FixtureSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.GetLastTestLogBySubboardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.GetLastTestLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.GetTestAuditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.GetTestLogBySubboardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.GetTestLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.HRMEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.HRMGetByStaffCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.HRMGetListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.HRMSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KYOCERAEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoCheckMacResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoGetBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoGetInitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoGetMacResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoGetQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoMacAddrEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoRemoveBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoSaveBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoTestLogFindByMacResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoTestLogFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.KyoTestLogSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.LaserGetBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.LaserSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.LeaderConfirmSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.NGDataExistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogExistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogFindByBoxIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogGetByBoxIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogGetListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogRemoveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogTotalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.OQCTestLogUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.RankledConfirmResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ResultEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.SaveTestAuditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.SaveTestLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ShippingGetByBoxIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ShippingRevertResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.tbl_test_logEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.TestLogEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.TestServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ViPackingCountByWoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ViPackingCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ViPackingCountWithoutBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ViPackingExistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ViPackingFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ViPackingIsRepairResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ViPackingLogEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.ViPackingSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.VNFGEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ERPService\OQC_Check_App.ERPService.WH_TokusaiEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.BARCODE_RULESEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.BARCODE_RULE_ITEMSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.Base_ModelsEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.BOARDSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.BOARD_BIND_STATUSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.CheckRepairResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.CheckUserLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.CountTestingLogNGResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.ErpUserEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.FindListUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.FindModelLikeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.FindProcessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.FindProductResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.FindUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetBarcodeRuleEntityByRuleNOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetBarcodeRuleItemsByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetBarodeRuleItemsByRuleNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetBarodeRuleItemsLikeNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetBarodeRulesLikeNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetBoardBinStatusByBoardNoAndOrderNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetBoardBinStatusByBoardNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetBoardsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetEntityINSPECTION_PROCESSESResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetFirstBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetListBarodeRuleItemsStartWidthResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetListBoardBinStatusByBaseNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetListBoardBinStatusByOrderNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetListINSPECTION_PROCESSESLikeKeywordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetListINSPECTION_PROCESSESStartWidthResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetListModelLikeKeywordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetListModelStartWidthResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetModelbyModelNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetModelInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetModelInfosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetModelsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetOrderItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetRepairResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetReplacingLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetRoleMemberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetRuleNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetStationByHostNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetStationByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetStationNoLikeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetTotalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetUserByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetUserToJsonByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetWoProcedureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetWorkOrderItemByBoardNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetWorkOrderItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetWorkOrderProcedureByOrderIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.GetWorkOrdersByOrderNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.InspectionOptionEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.INSPECTION_PROCESSESEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.INSPECTION_STATIONSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.KYOCERAEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.KyoGetBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.KyoGetMacResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.KyoRemoveBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.KyoSaveBoardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MasterEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MasterInfosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MasterRemoveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MasterSavesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.ModelSavesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.ModelsEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MurataBarcodeExistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MurataGetPackByBoardNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MurataGetPackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MurataModelCusExistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MurataRemoveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MurataSavePackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.MuratasEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.NichiconBarcodeExistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.NichiconEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.NichiconGetPackByBoardNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.NichiconGetPackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.NichiconRemoveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.NichiconSavePackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.OrderItemEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.RegisterSoftInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.RemoveModelInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.REPAIRING_LOGSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.REPLACING_LOGSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.ReportDailyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.ROLE_MEMBERSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.SaveModelInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.TESTING_LOGSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.USERSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.WORK_ORDERSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.WORK_ORDER_ITEMSEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\OQC_Check_App.PVSWebService.WORK_ORDER_PROCEDURESEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PVSWebService\PVSWebService.wsdl" />
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.BCLBFLMEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.DailyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.EMRMISMEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.FindTokusaiByEmNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.FindWoQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetActualProductResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetActualProductWidthKeyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetBcTokusaiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetByBcNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetByIssueSheetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetByTnNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetDataPointConfirmsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetDataPointsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetListByTnNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetListLocationByPartNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.GetListReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.LotNoLockedFindLikeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.LotNoLockedFindResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.LotNoLockedHisGetAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.LotNoLockedHisSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.LotNoLockedRemoveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.LotNoLockedSaveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.LotNo_LockedEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.LotNo_Locked_HisEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.MonthlyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.ResultEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.STR_WHLOCFMEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\OQC_Check_App.USAPService.TokusaiFinishResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\USAPService\USAPWebService.wsdl" />
+    <None Include="OQC_Check_App_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok-sign-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refesh-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-search-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean_tool_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wooden-box--arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export_excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\System Locked-1.png" />
+    <None Include="Resources\icons8-user-16.png" />
+    <None Include="Resources\versions_16px.png" />
+    <None Include="Resources\copyright_16px.png" />
+    <None Include="Resources\icons8_product_16.png" />
+    <None Include="Resources\09-32.png" />
+    <None Include="Connected Services\PVSWebService\PVSWebService.disco" />
+    <None Include="Connected Services\PVSWebService\configuration91.svcinfo" />
+    <None Include="Connected Services\PVSWebService\configuration.svcinfo" />
+    <None Include="Connected Services\PVSWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\USAPService\USAPWebService.disco" />
+    <None Include="Connected Services\USAPService\configuration91.svcinfo" />
+    <None Include="Connected Services\USAPService\configuration.svcinfo" />
+    <None Include="Connected Services\USAPService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ERPService\ERPWebService.disco" />
+    <None Include="Connected Services\ERPService\configuration91.svcinfo" />
+    <None Include="Connected Services\ERPService\configuration.svcinfo" />
+    <None Include="Connected Services\ERPService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ERPService\" />
+    <WCFMetadataStorage Include="Connected Services\PVSWebService\" />
+    <WCFMetadataStorage Include="Connected Services\USAPService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
