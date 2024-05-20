@@ -13,14 +13,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="OQC_Check_App.exe.manifest" size="4130">
+    <dependentAssembly dependencyType="install" codebase="OQC_Check_App.exe.manifest" size="4762">
       <assemblyIdentity name="OQC_Check_App.exe" version="1.0.0.53" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xZfZ9htyh0m3gXX1YF5DxGe25lIpdolv7oAtYQ3X0Lk=</dsig:DigestValue>
+        <dsig:DigestValue>y4M5sBzOjNMUOfv4IuVFMeiFOTTkjpCALUhJNdu8154=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

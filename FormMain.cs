@@ -5,9 +5,11 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 using OQC_Check_App.Business;
+using OQC_Check_App.ERPService;
 
 namespace OQC_Check_App
 {
@@ -39,7 +41,7 @@ namespace OQC_Check_App
             this.Enabled = true;
             txtBarcode.ResetText();
             txtBarcode.Focus();
-            ResultEntity entity = e.Result as ResultEntity;
+            Business.ResultEntity entity = e.Result as Business.ResultEntity;
             if (entity.IsLock)
             {
                 new frmLockSystem().ShowDialog();
@@ -89,7 +91,7 @@ namespace OQC_Check_App
             var dateTime = SingletonHelper.PvsInstance.GetDateTime();
             var boardNo = e.Argument.ToString();
             UmesHelper.FindUmesInfo(boardNo);
-            foreach (var msg in Validator.GetErrors(boardNo))
+            foreach (var msg in Validator.GetErrors(boardNo.Trim(), txtBoxID.Text.Trim(), chkOK.Checked))
             {
                 e.Result = msg;
                 return;
@@ -120,7 +122,7 @@ namespace OQC_Check_App
                 var res = SingletonHelper.ErpInstance.OQCTestLogSave("", entity);
                 if (res.status == "NG")
                 {
-                    e.Result = new ResultEntity()
+                    e.Result = new Business.ResultEntity()
                     {
                         IsLock = false,
                         IsPass = false,
@@ -139,7 +141,7 @@ namespace OQC_Check_App
                 var res = SingletonHelper.ErpInstance.OQCTestLogSave(Validator.entity.ProductionID, Validator.entity);
                 if (res.status == "NG")
                 {
-                    e.Result = new ResultEntity()
+                    e.Result = new Business.ResultEntity()
                     {
                         IsLock = false,
                         IsPass = false,
@@ -148,7 +150,7 @@ namespace OQC_Check_App
                     return;
                 }
             }
-            e.Result = new ResultEntity() { IsLock = false, IsPass = true, Status = boardNo };
+            e.Result = new Business.ResultEntity() { IsLock = false, IsPass = true, Status = boardNo };
         }
 
         /// <summary>
@@ -295,7 +297,11 @@ namespace OQC_Check_App
                     MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    Application.ExitThread();
+                    Environment.Exit(1);
+                }
+                else
+                {
+                    e.Cancel = true;
                 }
             }
         }
@@ -373,7 +379,7 @@ namespace OQC_Check_App
                 return;
             }
 
-            string key = txtSearchKey.Text;
+            string key = txtSearchKey.Text.Trim();
             var data = new List<ERPService.tbl_test_logEntity>();
             if (value == "BoxID")
             {
@@ -416,6 +422,24 @@ namespace OQC_Check_App
                 if (key != "")
                 {
                     var entity = SingletonHelper.ErpInstance.OQCTestLogFind(key);
+                    var historyData = SingletonHelper.ErpInstance.GetTestLog(key);
+                    if(historyData !=null && historyData.Count() > 0)
+                    {
+                        foreach(var item in historyData)
+                        {
+                            var dateHistory = DateTime.Parse(item.ORDER_NO);
+                            data.Add(new tbl_test_logEntity
+                            {
+                                ProductionID = item.BOARD_NO,
+                                BoxID = item.SUB_BOARD,
+                                Judge = item.PRODUCT_ID,
+                                OQCCheckDate = dateHistory,
+                                QA_Check = true,
+                                OperatorCheck =item.HOST_NAME,
+                                OperatorNameCheck = item.CLIENT_NAME,
+                            });
+                        }
+                    }
                     if (entity == null)
                     {
                         DisplayMessage("NG", $"Không tìm thấy dữ liệu của bản mạch '{txtSearchKey.Text}'!");

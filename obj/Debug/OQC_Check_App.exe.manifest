@@ -44,14 +44,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OQC_Check_App.exe" size="1462272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AntdUI.dll" size="1183232">
+      <assemblyIdentity name="AntdUI" version="1.2.3.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vlFkc0INsCkLfMDAYhMQsktiku6o7dWWOegXec768Fk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OQC_Check_App.exe" size="1464832">
       <assemblyIdentity name="OQC_Check_App" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wXsjy5tOxzpFrQ8gHW3nwd0nEBlIIoCymk+yl8JWGfU=</dsig:DigestValue>
+        <dsig:DigestValue>0qC4kzAw5jh2TcrUmA3vgr1OlujbvOHh7sUMKWOdMaw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

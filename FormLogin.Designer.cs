@@ -38,21 +38,23 @@
             this.txtCode = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.windowBar1 = new AntdUI.WindowBar();
+            this.btnLogin = new AntdUI.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnLogin);
             this.groupBox1.Controls.Add(this.lblMessage);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtPassword);
             this.groupBox1.Controls.Add(this.txtCode);
-            this.groupBox1.Location = new System.Drawing.Point(12, 54);
+            this.groupBox1.Location = new System.Drawing.Point(33, 76);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(277, 106);
+            this.groupBox1.Size = new System.Drawing.Size(277, 178);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login information";
@@ -61,7 +63,7 @@
             // 
             this.lblMessage.AutoSize = true;
             this.lblMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMessage.Location = new System.Drawing.Point(87, 85);
+            this.lblMessage.Location = new System.Drawing.Point(43, 152);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Size = new System.Drawing.Size(0, 13);
             this.lblMessage.TabIndex = 2;
@@ -69,7 +71,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 60);
+            this.label2.Location = new System.Drawing.Point(22, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 3;
@@ -78,7 +80,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 30);
+            this.label1.Location = new System.Drawing.Point(43, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
@@ -88,7 +90,7 @@
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(84, 54);
+            this.txtPassword.Location = new System.Drawing.Point(84, 62);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(163, 24);
@@ -100,7 +102,7 @@
             // 
             this.txtCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCode.Location = new System.Drawing.Point(84, 24);
+            this.txtCode.Location = new System.Drawing.Point(84, 32);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(163, 24);
             this.txtCode.TabIndex = 0;
@@ -116,28 +118,33 @@
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(8, 5);
+            this.label3.Location = new System.Drawing.Point(30, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(286, 40);
             this.label3.TabIndex = 2;
             this.label3.Text = "OQC Check System";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // windowBar1
+            // 
+            this.windowBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.windowBar1.Location = new System.Drawing.Point(0, 0);
+            this.windowBar1.MaximizeBox = false;
+            this.windowBar1.Name = "windowBar1";
+            this.windowBar1.Size = new System.Drawing.Size(348, 31);
+            this.windowBar1.TabIndex = 11;
+            this.windowBar1.Text = "ĐĂNG NHẬP";
+            // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Green;
-            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Image = global::OQC_Check_App.Properties.Resources.ok_sign_16;
-            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(96, 166);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(84, 101);
+            this.btnLogin.Margins = 0;
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(73, 33);
-            this.btnLogin.TabIndex = 10;
+            this.btnLogin.Size = new System.Drawing.Size(163, 31);
+            this.btnLogin.TabIndex = 12;
             this.btnLogin.Text = "Login";
-            this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Type = AntdUI.TTypeMini.Primary;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // FormLogin
@@ -145,17 +152,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(301, 202);
-            this.Controls.Add(this.btnLogin);
+            this.ClientSize = new System.Drawing.Size(348, 266);
+            this.Controls.Add(this.windowBar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLogin";
+            this.Resizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -173,7 +182,8 @@
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnLogin;
+        private AntdUI.WindowBar windowBar1;
+        private AntdUI.Button btnLogin;
     }
 }
 

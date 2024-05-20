@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace OQC_Check_App.Business
 {
@@ -35,17 +36,57 @@ namespace OQC_Check_App.Business
                 return _entity;
             }
         }
-        public static IEnumerable<ResultEntity> GetErrors(string boardNo)
+        public static IEnumerable<ResultEntity> GetErrors(string boardNo, string boxID, bool check = true)
         {
             ResultEntity result = new ResultEntity();
             _entity = SingletonHelper.ErpInstance.OQCTestLogFind(boardNo);
-            if (_entity != null && _entity.QA_Check == true)
+
+            if(_entity!=null && _entity.QA_Check && _entity.BoxID != boxID)
             {
-                result.IsLock = UsapHelper.IsKyo ? true : false;
-                result.IsPass = false;
-                result.Status = $"Barcode [{boardNo}] đã được kiểm tra.\nNgày kiểm tra [{entity.OQCCheckDate.Value.ToShortDateString()}]";
-                yield return result;
+                if (MessageBox.Show($"BoardNo: {boardNo} đã được bắn tại BoxId: {_entity.BoxID}\nBạn có muốn bắn vào BoxId mới?\nYES để tiếp tục!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    string oldBoxId = _entity.BoxID;
+                    string oldJudge = _entity.Judge;
+                    string oldCheckDate = _entity.OQCCheckDate.ToString();
+                    string oldCode = _entity.OperatorCode;
+                    string oldName = _entity.OperatorNameCheck;
+                    Validator.entity.OperatorCheck = UmesHelper.User.ID;
+                    Validator.entity.Judge = check == true ? "OK" : "NG";
+                    Validator.entity.QA_Check = true;
+                    Validator.entity.BoxID = boxID;
+                    Validator.entity.OldBoxID = oldBoxId;
+                    Validator.entity.BoxIDCheck = boxID;
+                    Validator.entity.OperatorNameCheck = UmesHelper.User.NAME;
+                    Validator.entity.OQCCheckDate = SingletonHelper.PvsInstance.GetDateTime();
+
+                    var res = SingletonHelper.ErpInstance.OQCTestLogSave(Validator.entity.ProductionID, Validator.entity);
+                    if (res.status == "OK")
+                    {
+                        TestLogEntity testLogEntity = new TestLogEntity();
+                        var id = Guid.NewGuid().ToString();
+                        testLogEntity.ID = id;
+                        testLogEntity.BOARD_NO = boardNo;
+                        testLogEntity.SUB_BOARD = oldBoxId;
+                        testLogEntity.PRODUCT_ID = oldJudge;
+                        testLogEntity.ORDER_NO = oldCheckDate;
+                        testLogEntity.HOST_NAME = oldCode;
+                        testLogEntity.CLIENT_NAME = oldName;
+                        testLogEntity.TEST_TIME = DateTime.Now;
+                        SingletonHelper.ErpInstance.SaveTestLog(testLogEntity);
+                    }
+                    result.IsLock = false;
+                    result.IsPass = true;
+                    result.Status = $"Đổi BoxId cho BoardNo: {boardNo}";
+                    yield return result;
+                }
             }
+            //if (_entity != null && _entity.QA_Check == true)
+            //{
+            //    result.IsLock = UsapHelper.IsKyo ? true : false;
+            //    result.IsPass = false;
+            //    result.Status = $"Barcode [{boardNo}] đã được kiểm tra.\nNgày kiểm tra [{entity.OQCCheckDate.Value.ToShortDateString()}]";
+            //    yield return result;
+            //}
             if (UsapHelper.IsKyo)
             {
                 var entity = SingletonHelper.PvsInstance.KyoGetBoard(boardNo);

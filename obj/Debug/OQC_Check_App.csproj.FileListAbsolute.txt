@@ -151,3 +151,6 @@ C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\ob
 C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.application
 C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.exe
 C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Check_App.pdb
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\bin\Debug\AntdUI.dll
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\bin\Debug\AntdUI.xml
+C:\Users\u42107\Desktop\ThanhDX\Thanh_Project\39. OQC_Check_App\OQC_Check_App\obj\Debug\OQC_Chec.A8225B6C.Up2Date

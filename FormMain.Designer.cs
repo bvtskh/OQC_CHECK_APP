@@ -476,6 +476,7 @@
             // 
             this.btnClear.BackColor = System.Drawing.Color.YellowGreen;
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Image = global::OQC_Check_App.Properties.Resources.clean_tool_24;
@@ -493,6 +494,7 @@
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Teal;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::OQC_Check_App.Properties.Resources.search_database;
@@ -510,6 +512,7 @@
             // 
             this.btnReset.BackColor = System.Drawing.Color.Green;
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Image = global::OQC_Check_App.Properties.Resources.refesh_16;
